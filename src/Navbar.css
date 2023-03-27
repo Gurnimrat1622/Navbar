@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+nav .logo {
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav {
+  height: 70px;
+  background: green;
+}
+nav ul {
+  float: right;
+  margin-right: 320px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: green;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: red;
+}
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid red;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i {
+  margin-left: 45px;
+}
+input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 12px;
+  font-size: 17px;
+}
+.search-form {
+  position: relative;
+  top: -60px;
+  right: 100px;
+}
+button {
+  position: relative;
+  top: 10px;
+  right: -300px;
+  float: right;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  padding: 7px;
+  cursor: pointer;
+}
+input[type="text"] {
+  position: relative;
+  right: -28px;
+  padding: 7px;
+  border: none;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.container {
+  height: 650px;
+}
+img {
+  width: 100%;
+  height: 400px;
+}
